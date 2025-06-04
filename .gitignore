@@ -2,7 +2,7 @@
 Go to file
 t
 test/java/com/causana/gateway content loaded
-.idea
+.idea/
 .gitignore
 causana.iml
 misc.xml
@@ -63,3 +63,19 @@ main.go
 README.md
 causal_test_biased.csv
 test.py
+.DS_Store
+.idea/
+*.iml
+*.vcs.xml
+src/test/
+test/
+*.csv
+test.py
+.DS_Store
+.idea/
+*.iml
+*.csv
+test.py
+test/
+src/test/
+gateway/test/
