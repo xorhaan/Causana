@@ -2,49 +2,49 @@
 
 **Causana** is a professional, full-stack system for analyzing **multivariate time series data** to uncover **temporal causal relationships**. Users can upload datasets, run advanced causal inference algorithms, and visualize the results as **interactive Directed Acyclic Graphs (DAGs)** showing causality across variables and lags.
 
-## 🌟 Features
+## Features
 
-### 🔬 Advanced Causal Analysis
+### Advanced Causal Analysis
 - **VAR Analysis** - Vector Autoregression based causality detection
 - **Granger Causality** - Statistical causality testing
 - **Correlation Analysis** - Relationship strength measurement
 - **Multiple Analysis Methods** - Run all methods simultaneously
 
-### 📊 Professional Visualization
+### Professional Visualization
 - **Interactive Network Graphs** - Drag, zoom, and explore causal relationships
 - **Real-time Statistics** - Node count, edge density, average weights
 - **Professional UI** - Modern, responsive design with dark/light mode
 - **Graph Controls** - Fit to view, stabilize, node selection
 
-### 🛡️ Robust Data Processing
+### Robust Data Processing
 - **Smart CSV Parsing** - Automatic delimiter detection
 - **Date Column Handling** - Automatic conversion to numeric values
 - **Data Validation** - Comprehensive quality checks and warnings
 - **Missing Value Handling** - Intelligent imputation strategies
 - **Linear Dependency Detection** - Automatic correlation-based column removal
 
-### 🚀 Modern Architecture
+### Modern Architecture
 - **FastAPI Backend** - High-performance Python API
 - **React Frontend** - Modern, responsive web interface
 - **Professional Styling** - CSS custom properties and animations
 - **PWA Ready** - Progressive Web App capabilities
 
-## 🏗️ Architecture
+## Architecture
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   React Frontend │    │   FastAPI Backend│    │   Data Processing│
-│   (Port 1234)   │◄──►│   (Port 8000)   │◄──►│   & Analysis    │
-│                 │    │                 │    │                 │
-│ • File Upload   │    │ • CSV Processing│    │ • VAR Analysis  │
+┌─────────────────┐    ┌─────────────────-┐    ┌─────────────────┐
+│ React Frontend  │    │ FastAPI Backend  │    │ Data Processing │
+│   (Port 1234)   │◄──►│   (Port 8000)    │◄──►│   & Analysis    │
+│                 │    │                  │    │                 │
+│ • File Upload   │    │ • CSV Processing │    │ • VAR Analysis  │
 │ • Interactive   │    │ • Data Validation│    │ • Granger Tests │
 │   Graphs        │    │ • Causal Analysis│    │ • Correlation   │
-│ • Professional  │    │ • JSON Response │    │ • Matrix Checks │
-│   UI            │    │ • Error Handling│    │ • Noise Addition│
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+│ • Professional  │    │ • JSON Response  │    │ • Matrix Checks │
+│   UI            │    │ • Error Handling │    │ • Noise Addition│
+└─────────────────┘    └─────────────────-┘    └─────────────────┘
 ```
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend
 - **React 18** - Modern UI framework
@@ -59,7 +59,7 @@
 - **Scikit-learn** - Data preprocessing and normalization
 - **NumPy** - Numerical computing
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - **Node.js** 16+ (for frontend)
@@ -93,7 +93,7 @@
    - Backend API: http://localhost:8000
    - API Docs: http://localhost:8000/docs
 
-## 🎯 Usage
+## Usage
 
 ### 1. Upload Your Data
 - Drag and drop or click to browse for CSV files
@@ -113,7 +113,7 @@
 - **Statistics**: Node count, edge density, average weights
 - **Graph Controls**: Fit to view, stabilize, select nodes
 
-## 📊 Supported Data Formats
+## Supported Data Formats
 
 ### CSV Requirements
 - **Minimum**: 2 columns, 50 rows (recommended)
@@ -130,7 +130,7 @@ datetime,nat_demand,T2M_toc,QV2M_toc,W2M_toc,Holiday_ID,school
 ...
 ```
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### POST `/analyze`
 Main analysis endpoint for causal inference.
@@ -182,7 +182,7 @@ Health check endpoint.
 ### GET `/methods`
 Available analysis methods and parameters.
 
-## 🎨 Customization
+## Customization
 
 ### Styling
 The frontend uses CSS custom properties for easy theming:
@@ -202,7 +202,7 @@ Modify analysis behavior in `causal-engine/main.py`:
 - Significance levels
 - Data preprocessing steps
 
-## 🚀 Deployment
+## Deployment
 
 ### Production Setup
 1. **Build Frontend**
@@ -223,7 +223,7 @@ Modify analysis behavior in `causal-engine/main.py`:
    - Configure CORS origins
    - Set logging levels
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -231,23 +231,22 @@ Modify analysis behavior in `causal-engine/main.py`:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Statsmodels** for statistical analysis capabilities
 - **React Graph Vis** for network visualization
 - **FastAPI** for high-performance API framework
 - **Pandas** for data manipulation
 
-## 📞 Support
+## Support
 
-- **Issues**: [GitHub Issues](https://github.com/R0h-a-a-an/Causana/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/R0h-a-a-an/Causana/discussions)
+- **Issues**: [GitHub Issues](https://github.com/xorhaan/Causana/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/xorhaan/Causana/discussions)
 - **Documentation**: [API Docs](http://localhost:8000/docs) (when running locally)
 
 ---
 
-**Causana** - Unlock the hidden causal relationships in your time series data! 🔗📊
